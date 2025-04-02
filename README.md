@@ -1,21 +1,10 @@
-This repository contains Guix attestations for releases of Bitcoin Core.
+Xin cám ơn các nhà thanh khoản đã cùng nhau xây dựng một nền tiền điện tử mới ! Cân bằng do chính  chuỗi liên kết của chúng ta tạo ra đã nắm giữ quyền kiểm soát để để ổn định sự gia tăng do việc tất cả mọi người trên thế giới truy cập - tìm kiếm  bộ máy  google khiến nhiều hệ lụy xảy ra đặc biệt là :
+ Khí hậu  - khí thải nhà kính
+Tội phạm mạng 
+GDP của các thợ đào 
+Giải pháp này của tôi đã được xử lý triệt để và tinh tế nhất như sau.
+Thâu tóm toàn bộ giá trị BTC sau khi tạo liên kết chuỗi tổng 
+- phân định tài sản của mỗi  cá nhân riêng qua trình khóa api hay  trình xác thực  như Authenticator
+ 
 
-## Overall process
-
-The Guix build consists of two stages:
-
-- In the first stage (`noncodesigned`), people compile the binaries from source.
-- Then, code signatures for Windows and MacOS are generated from the binaries that were produced in the first stage, and [distributed](https://github.com/bitcoin-core/bitcoin-detached-sigs) to the builders.
-- In the second stage (`all`), the builders attach these code signatures.
-
-See https://github.com/bitcoin/bitcoin/blob/master/doc/release-process.md#building on how to build the release with Guix and create an attestation.
-
-## Directory structure
-
-- `/<version>/<signer>/`: Build attestations for repository tag `v<version>` for `<signer>`.
-    - `noncodesigned.SHA256SUMS`: Hashes of binaries produced by the first stage build for this version.
-    - `noncodesigned.SHA256SUMS.asc`: Detached PGP signature for `noncodesigned.SHA256SUMS`.
-    - `all.SHA256SUMS`: Hashes of binaries produced by the second stage build. This covers all the binaries uploaded to the website, and is what to check release binaries against.
-    - `all.SHA256SUMS.asc`: Detached PGP signature for `all.SHA256SUMS`.
-- `/builder-keys/<signer>.gpg`: PGP keys of the signers. If you're going to do builds and contribute attestations, file a PR to add your key here.
-- `/contrib`: Scripts used in the CI tests.
+Quan trọng nhất là thay thế tìm kiếm trên google bằng công nghệ meta AI dùng Llama 3.2 để thay thế .
